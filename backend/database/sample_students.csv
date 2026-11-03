@@ -1,0 +1,11 @@
+student_id,full_name,email,course,semester,attendance,previous_marks
+BCA-2024-001,Aarav Sharma,aarav.sharma@gradelytics.edu,BCA,5,88.5,82.0
+BCA-2024-002,Priya Patel,priya.patel@gradelytics.edu,BCA,5,92.0,89.5
+BCA-2024-003,Rohan Verma,rohan.verma@gradelytics.edu,BCA,5,62.0,48.0
+BCA-2024-004,Ananya Iyer,ananya.iyer@gradelytics.edu,BCA,5,78.5,74.0
+BCA-2024-005,Vikram Singh,vikram.singh@gradelytics.edu,BCA,5,44.0,38.5
+BCA-2024-006,Neha Gupta,neha.gupta@gradelytics.edu,BCA,5,81.0,76.5
+BCA-2024-007,Aditya Roy,aditya.roy@gradelytics.edu,BCA,5,55.0,42.0
+BCA-2024-008,Sneha Kulkarni,sneha.k@gradelytics.edu,BCA,5,95.0,91.0
+BCA-2024-009,Kavya Nair,kavya.nair@gradelytics.edu,BCA,5,71.0,68.0
+BCA-2024-010,Rahul Deshmukh,rahul.d@gradelytics.edu,BCA,5,39.0,32.0

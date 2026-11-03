@@ -1,0 +1,77 @@
+{
+  "dataset": {
+    "total_records": 500,
+    "train_records": 400,
+    "test_records": 100,
+    "features_count": 7,
+    "target": "final_exam_marks",
+    "type": "Synthetic Academic Performance Dataset (Documented, Seed 42)"
+  },
+  "features": [
+    "attendance",
+    "previous_marks",
+    "assignment_marks",
+    "study_hours",
+    "class_participation",
+    "internal_marks",
+    "completed_assignments"
+  ],
+  "feature_labels": {
+    "attendance": "Attendance Percentage (%)",
+    "previous_marks": "Previous Examination Marks",
+    "assignment_marks": "Assignment Marks",
+    "study_hours": "Daily Study Hours",
+    "class_participation": "Class Participation (1-10)",
+    "internal_marks": "Internal Assessment Marks",
+    "completed_assignments": "Completed Assignments"
+  },
+  "algorithms": {
+    "linear_regression": {
+      "name": "Linear Regression",
+      "mae": 3.758,
+      "rmse": 4.63,
+      "r2_score": 0.843,
+      "coefficients": {
+        "attendance": 0.134,
+        "previous_marks": 0.254,
+        "assignment_marks": 0.185,
+        "study_hours": 1.756,
+        "class_participation": 0.909,
+        "internal_marks": 0.221,
+        "completed_assignments": 0.882
+      }
+    },
+    "random_forest": {
+      "name": "Random Forest Regressor",
+      "mae": 4.134,
+      "rmse": 5.405,
+      "r2_score": 0.787,
+      "n_estimators": 120,
+      "max_depth": 8
+    }
+  },
+  "selected_model": {
+    "name": "Linear Regression",
+    "metrics": {
+      "mae": 3.758,
+      "rmse": 4.63,
+      "r2": 0.843
+    }
+  },
+  "feature_importance": {
+    "attendance": 4.89,
+    "previous_marks": 6.79,
+    "assignment_marks": 12.56,
+    "study_hours": 6.58,
+    "class_participation": 4.06,
+    "internal_marks": 62.38,
+    "completed_assignments": 2.73
+  },
+  "interpretability_note": "Feature importance indicates mathematical associations learned by the Random Forest decision trees on this dataset. It describes predictive weight, NOT strict causality. Final examination marks are never used as an input feature, preventing target leakage.",
+  "viva_explanation": {
+    "overview": "The system uses regression to predict a continuous target variable (Final Exam Marks 0-100).",
+    "why_regression": "Marks are numeric and continuous. Classification predicts categories, whereas regression estimates exact marks.",
+    "metrics_distinction": "MAE measures average magnitude of absolute errors in marks. RMSE penalizes larger prediction errors. R\u00b2 indicates the proportion of variance in marks explained by student features.",
+    "leakage_prevention": "Final exam mark is strictly the target 'y' and is excluded from input feature vector 'X'."
+  }
+}
